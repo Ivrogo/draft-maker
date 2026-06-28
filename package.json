@@ -1,0 +1,22 @@
+{
+  "name": "draft-maker",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter @draft-maker/db run db:generate",
+    "db:migrate": "pnpm --filter @draft-maker/db run db:migrate",
+    "db:push": "pnpm --filter @draft-maker/db run db:push"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.0",
+    "prettier": "^3.5.3"
+  }
+}
